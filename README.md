@@ -14,6 +14,11 @@ The analysis integrates multiple high-fidelity datasets to ensure geographic and
 * **2024 General Election Results:** Precinct-level Statement of Vote (SOV) data.
 * **Geographic Data:** Shapefiles for the 2024 precincts and the proposed AB 604 district boundaries.
 * **Candidate Data:** District-level candidate records for the 2024 election cycle.
+* California Statewide Special Election (<https://www.sos.ca.gov/elections/upcoming-elections/statewide-special-nov-4-2025>): official website for the election from the CA Secretary of State.
+* Statewide Database Precinct Data (<https://statewidedatabase.org/d20/g24.html>): source of precinct-level data from the 2024 General Election.
+* 2024 Election Geographic Data (<https://statewidedatabase.org/d20/g24_geo_conv.html>): source of shapefiles for precinct maps from 2024 General Election.
+* Proposed Congressional Map (<https://aelc.assembly.ca.gov/proposed-congressional-map>): source of shapefiles for district map proposed in AB 604.
+
 
 ## Methodology
 The project follows a rigorous four-stage analytical framework:
@@ -32,14 +37,12 @@ I utilized two primary metrics to evaluate gerrymandering:
 * **Efficiency Gap (EG):** Quantifies the difference in "wasted votes" between parties to detect systemic bias.
 * **Mean-Median Score:** Assesses the difference between average vote share and the median district's vote share to identify partisan skew.
 
-### 4. Exploratory Data Analysis (EDA)
-* Identified congressional districts with the narrowest margins and investigated turnout variance across precincts.
-* Analyzed "blowout" precincts to understand the depth of partisan concentration.
-
-## Key Insights
-* **Partisan Bias Reduction:** The analysis revealed a significant drop in the Efficiency Gap from **0.283** (current 2024 map) to **0.179** (proposed AB 604 map).
-* **Fairness Implications:** The decrease in the Efficiency Gap suggests that the AB 604 plan would lead to a more representative and competitive electoral environment, reducing wasted votes by approximately 36.7%.
-* **Repeatable Pipeline:** Successfully established a robust method for aligning historical voting data with future geographic boundaries.
+### 5. Interactive Analytics Dashboard
+* **Architected** an interactive decision-support tool using **Quarto** and the **Brite theme** to visualize redistricting impacts.
+* **Deployed** automated Value Boxes to track real-time shifts in **Mean-Median Difference** and **Efficiency Gap**.
+* **Engineered** dynamic choropleth maps using `sf` to translate complex spatial data into intuitive geographic insights.
+* **Implemented** a side-by-side comparative layout to contrast Democrats' House Share between 2024 and AB 604 maps.
+* **Optimized** performance by pre-processing large geographic shapefiles with `rmapshaper` for seamless browser rendering.
 
 ## Technical Stack
 * **Language:** R
