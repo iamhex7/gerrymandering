@@ -38,11 +38,15 @@ I utilized two primary metrics to evaluate gerrymandering:
 * **Mean-Median Score:** Assesses the difference between average vote share and the median district's vote share to identify partisan skew.
 
 ### 5. Interactive Analytics Dashboard
+
+<img width="743" height="782" alt="Screenshot 2026-01-08 at 17 08 06" src="https://github.com/user-attachments/assets/56b82541-2cf8-4439-b747-287a73a620c1" />
+
 * **Architected** an interactive decision-support tool using **Quarto** and the **Brite theme** to visualize redistricting impacts.
 * **Deployed** automated Value Boxes to track real-time shifts in **Mean-Median Difference** and **Efficiency Gap**.
 * **Engineered** dynamic choropleth maps using `sf` to translate complex spatial data into intuitive geographic insights.
 * **Implemented** a side-by-side comparative layout to contrast Democrats' House Share between 2024 and AB 604 maps.
 * **Optimized** performance by pre-processing large geographic shapefiles with `rmapshaper` for seamless browser rendering.
+
 
 ## Technical Stack
 * **Language:** R
@@ -50,8 +54,14 @@ I utilized two primary metrics to evaluate gerrymandering:
 * **Format:** Quarto / Markdown
 
 ---
-## ⚠️ Copyright and Intellectual Property Notice
-**All rights reserved.**
-The source code, data processing logic, and analytical methodologies contained in this repository are the sole intellectual property of **Hex Wu**. 
-* **Strict Prohibition:** Under no circumstances may any part of this code or research be copied, redistributed, adapted, or used for any purpose (including academic, commercial, or personal) without explicit written permission from the author.
-* **Integrity Warning:** This repository is for portfolio demonstration purposes only. Any unauthorized use or plagiarism of this work will be pursued to the fullest extent of institutional and legal policies.
+
+## Academic Integrity & Honor Code
+**Note on Code Availability:**
+In accordance with the **UC Berkeley Honor Code** and to maintain academic integrity for the course (Lab 4 Project), the source code for data cleaning and map generation is **not publicly available** in this repository to prevent plagiarism. 
+
+---
+
+## Contact
+- **Author**: Hex Wu
+- **Email**: [hex@berkeley.edu](mailto:hex@berkeley.edu)
+- **Portfolio**: [hexVerse Portfolio](https://hexverse.framer.media)
