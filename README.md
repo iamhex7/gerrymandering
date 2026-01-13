@@ -53,13 +53,9 @@ I utilized two primary metrics to evaluate gerrymandering:
 * **Libraries:** `tidyverse`, `dplyr`, `stringr`, `readr`, `janitor`
 * **Format:** Quarto / Markdown
 
----
-
 ## Academic Integrity & Honor Code
 **Note on Code Availability:**
 In accordance with the **UC Berkeley Honor Code** and to maintain academic integrity for the course (Lab 4 Project), the source code for data cleaning and map generation is **not publicly available** in this repository to prevent plagiarism. 
-
----
 
 ## Contact
 - **Author**: Hex Wu
